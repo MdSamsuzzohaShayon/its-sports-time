@@ -1,0 +1,38 @@
+@mixin sm-two-columns{
+  height: fit-content;
+  a{
+    height: $sm-col-height;
+    img{
+      height: $sm-col-height;
+      width: 100%;
+      object-position: center;
+      object-fit: cover;
+    }
+    .txt-img{
+      height: $sm-col-height;
+    }
+  }
+}
+
+@mixin heading-design{
+  font-family: $heading-1-font-family;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+@mixin fit-post-image{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+@mixin bg_image_style( $w, $h,){
+  width: $w;
+  height: $h;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
