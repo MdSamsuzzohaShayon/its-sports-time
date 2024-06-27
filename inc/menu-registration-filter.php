@@ -2,16 +2,16 @@
 
 
 
-function thesportsanctum_register_menus(){
+function itssportstime_register_menus(){
     register_nav_menus( array(
-        'top_menu' => __( 'Top Menu', 'thesportsanctum' ),
-        'main_menu'  => __( 'Main Menu', 'thesportsanctum' ),
-        'feature_menu'  => __( 'Feature Menu', 'thesportsanctum' ),
-        'social_menu'  => __( 'Social Menu', 'thesportsanctum' ),
-        // 'footer_menu'  => __( 'Footer Menu', 'thesportsanctum' ),
+        'top_menu' => __( 'Top Menu', 'itssportstime' ),
+        'main_menu'  => __( 'Main Menu', 'itssportstime' ),
+        'feature_menu'  => __( 'Feature Menu', 'itssportstime' ),
+        'social_menu'  => __( 'Social Menu', 'itssportstime' ),
+        // 'footer_menu'  => __( 'Footer Menu', 'itssportstime' ),
     ) );
 }
-add_action( 'after_setup_theme', 'thesportsanctum_register_menus', 0 );
+add_action( 'after_setup_theme', 'itssportstime_register_menus', 0 );
 
 function add_additional_li_class($classes, $item, $args){
     /**

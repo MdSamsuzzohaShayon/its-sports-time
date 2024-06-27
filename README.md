@@ -61,3 +61,5 @@
  - [Never leave any whitespace at the top of the file](https://www.hostinger.com/tutorials/cannot-modify-header-information#:~:text=If%20the%20%E2%80%9CCannot%20modify%20header,version%20and%20reboot%20the%20website.)
  - Custom category as menu not working
  - Sidebar (Popular widget is not made) showing Search, Recent Posts, Recent Comments
+ - On CentOS/Fedora, the user is usually apache. `sudo chown -R apache:apache /path/to/your/wordpress
+   `

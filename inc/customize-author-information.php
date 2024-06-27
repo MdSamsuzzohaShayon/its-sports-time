@@ -1,5 +1,5 @@
 <?php
-class TheSportsanctum_Author_Customizer {
+class Itssportstime_Author_Customizer {
     public function __construct() {
         add_action( 'customize_register', array( $this, 'register_customize_sections' ) );
     }

@@ -139,7 +139,7 @@
  * @views count
  * Save views from this single post page to show the same post in popular post
  */
-thesportsanctum_save_post_views(get_the_ID());
+itssportstime_save_post_views(get_the_ID());
 ?>
 
 

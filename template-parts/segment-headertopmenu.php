@@ -10,7 +10,7 @@
                         'theme_location' => "top_menu", // (string) Theme location to be used. Must be registered with register_nav_menu() in order to be selectable by the user.
                         'menu_class' => "p-0 d-flex justify-content-start align-items-center m-0", // (string) CSS class to use for the ul element which forms the menu. Default 'menu'.
                         'container' => "", // (string) Whether to wrap the ul, and what to wrap it with. Default 'div'.
-                        'walker' => new Thesportsanctum_Top_Menu_Walker(), // (object) Instance of a custom walker class.
+                        'walker' => new Itssportstime_Top_Menu_Walker(), // (object) Instance of a custom walker class.
                     ));
                   }else{
                     echo '<div class="p-0 d-flex justify-content-start align-items-center m-0"></div>';
@@ -28,7 +28,7 @@
                         'theme_location' => "social_menu",
                         'menu_class' => "p-0 d-flex justify-content-center align-items-center m-0",
                         'container' => "",
-                        'walker' => new Thesportsanctum_Social_Menu_Walker(),
+                        'walker' => new Itssportstime_Social_Menu_Walker(),
                     ));
                   }else{
                     echo '<div class="p-0 d-flex justify-content-center align-items-center m-0"></div>';

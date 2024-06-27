@@ -2,7 +2,7 @@
 /**
  * @function this function will be used in single.php to get the viewer from the post
  */
-function thesportsanctum_save_post_views($postID)
+function itssportstime_save_post_views($postID)
 {
     $metaKey = 'tss_post_views';
     $views = get_post_meta($postID, $metaKey, true);
@@ -36,12 +36,12 @@ remove_action('wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
 /**
  * @sidebar Popular posts sidebar
  */
-function thesportsanctum_popular_post_sidebar()
+function itssportstime_popular_post_sidebar()
 {
     register_sidebar(array(
-        'name' => __('Popular sidebar', 'thesportsanctum'),
+        'name' => __('Popular sidebar', 'itssportstime'),
         'id' => 'sidebar-popular',
-        'description' => __('Widgets in this area will be shown on all popular posts.', 'thesportsanctum'),
+        'description' => __('Widgets in this area will be shown on all popular posts.', 'itssportstime'),
 //        'before_widget' => '"<li id="%1$s" class="widget %2$s">"',
         'before_widget' => '',
         'after_widget' => '',
@@ -50,7 +50,7 @@ function thesportsanctum_popular_post_sidebar()
     ));
 }
 
-add_action('widgets_init', 'thesportsanctum_popular_post_sidebar');
+add_action('widgets_init', 'itssportstime_popular_post_sidebar');
 
 
 

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="container">
-    <h2 class="text-success">Page.php</h2>
+<!--    <h2 class="text-success">Page.php</h2>-->
     <?php the_title(); ?>
     <?php if(have_posts()): while(have_posts()) : the_post(); ?>
         <?php the_content(); ?>

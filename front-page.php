@@ -1,5 +1,5 @@
 <?php get_header('home'); ?>
-<!-- <div class="main-header-body-wrapper" style="background-image: url(<?php //echo get_theme_mod("thesportsanctum_banner"); ?>);"> -->
+<!-- <div class="main-header-body-wrapper" style="background-image: url(<?php //echo get_theme_mod("Itssportstime_banner"); ?>);"> -->
 <!-- MAIN SECTION START  -->
 <div class="main-body background-transparent">
 

@@ -1,12 +1,14 @@
 <?php
 /**
- * Add story post type for different players' life story and more
+ * Post type registrations should not be hooked before the ‘init’ action. Also, any taxonomy connections should be registered via the $taxonomies argument to ensure consistency when hooks such as ‘parse_query’ or ‘pre_get_posts’ are used.
+ * Post types can support any number of built-in core features such as meta boxes, custom fields, post thumbnails, post statuses, comments, and more. See the $supports argument for a complete list of supported features.
+ * Reference: https://developer.wordpress.org/reference/functions/register_post_type/
  */
-function thesportsanctum_stories(){
+function itssportstime_stories(){
     register_post_type('stories', array(
         'labels' => array(
-            'name' => __('Stories', 'thesportsanctum'),
-            'singular_name' => __('Story', 'thesportsanctum'),
+            'name' => __('Stories', 'itssportstime'),
+            'singular_name' => __('Story', 'itssportstime'),
         ),
         'menu_icon' => 'dashicons-media-document',
         'public' => true,
@@ -15,10 +17,10 @@ function thesportsanctum_stories(){
     ));
 }
 
-add_action('init', 'thesportsanctum_stories');
+add_action('init', 'itssportstime_stories');
 
 
-function thesportsanctum_texonomy(){
+function itssportstime_stories_texonomy(){
     register_taxonomy('story_type', array('stories'), array(
         'labels' => array(
             'name' => "StoriesType",
@@ -28,7 +30,7 @@ function thesportsanctum_texonomy(){
 //        'hierarchical' => false
     ));
 }
-add_action('init', 'thesportsanctum_texonomy');
+add_action('init', 'itssportstime_stories_texonomy');
 
 
 
@@ -39,23 +41,25 @@ add_action('init', 'thesportsanctum_texonomy');
 /**
  * Add tournament post type for different tournament update
  */
-function thesportsanctum_tournaments(){
+function itssportstime_tournaments(){
     register_post_type('tournaments', array(
         'labels' => array(
-            'name' => __('Tournaments', 'thesportsanctum'),
-            'singular_name' => __('Tournament', 'thesportsanctum'),
+            'name' => __('Tournaments', 'itssportstime'),
+            'singular_name' => __('Tournament', 'itssportstime'),
         ),
         'menu_icon' => 'dashicons-table-row-before',
         'public' => true,
         'has_archive' => true,
-        'supports' => array( 'title',  'thumbnail', 'editor', )
+        'show_in_rest' => true,
+        'supports' => array( 'title', 'thumbnail', 'editor', ),
+        'taxonomies' => array( 'post_tag'), // Add support for categories and tags , 'category',
     ));
 }
 
-add_action('init', 'thesportsanctum_tournaments');
+add_action('init', 'itssportstime_tournaments');
 
 
-function thesportsanctum_tournaments_type(){
+function itssportstime_tournaments_type(){
     register_taxonomy('tournament_type', array('tournaments'), array(
         'labels' => array(
             'name' => "TournamentsType",
@@ -65,7 +69,7 @@ function thesportsanctum_tournaments_type(){
 //        'hierarchical' => false
     ));
 }
-add_action('init', 'thesportsanctum_tournaments_type');
+add_action('init', 'itssportstime_tournaments_type');
 
 
 
@@ -76,18 +80,19 @@ add_action('init', 'thesportsanctum_tournaments_type');
  * All transfer news of football
  * There are no post type for this type of post
  */
-function thesportsanctum_transfer_news(){
+function itssportstime_transfer_news(){
     register_post_type('transfers', array(
         'labels' => array(
-            'name' => __('Transfers', 'thesportsanctum'),
-            'singular_name' => __('Transfer', 'thesportsanctum'),
+            'name' => __('Transfers', 'itssportstime'),
+            'singular_name' => __('Transfer', 'itssportstime'),
         ),
         'menu_icon' => 'dashicons-controls-repeat',
         'public' => true,
         'has_archive' => true,
+        'show_in_rest' => true,
         'supports' => array( 'title',  'thumbnail', 'editor', )
     ));
 }
 
-add_action('init', 'thesportsanctum_transfer_news');
+add_action('init', 'itssportstime_transfer_news');
 ?>

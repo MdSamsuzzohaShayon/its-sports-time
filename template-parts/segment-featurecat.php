@@ -6,7 +6,7 @@
          'theme_location' => 'feature_menu',
          'container' => '',
          'menu_class' => 'd-flex justify-content-around align-items-center flex-wrap flex-lg-nowrap',
-         'walker' => new Thesportsanctum_Feature_Menu_Walker()
+         'walker' => new Itssportstime_Feature_Menu_Walker()
      ));
     }
     ?>

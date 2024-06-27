@@ -46,7 +46,7 @@
                             'theme_location' => "social_menu",
                             'menu_class' => "p-0 d-flex justify-content-center align-items-center m-0",
                             'container' => "",
-                            'walker' => new Thesportsanctum_Social_Menu_Walker(),
+                            'walker' => new Itssportstime_Social_Menu_Walker(),
                         ));
                       }else{
                         echo '<div class="p-0 d-flex justify-content-center align-items-center m-0"></div>';

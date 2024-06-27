@@ -25,7 +25,7 @@ if ( post_password_required() )
             /*
              * Comment title
              */
-                printf( _nx( 'One thought on "%2$s"', '%1$s thoughts on "%2$s"', get_comments_number(), 'comments title', 'thesportsanctum' ),
+                printf( _nx( 'One thought on "%2$s"', '%1$s thoughts on "%2$s"', get_comments_number(), 'comments title', 'itssportstime' ),
                     number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</span>' );
             ?>
         </h2>
@@ -33,7 +33,7 @@ if ( post_password_required() )
         <ol class="comment-list">
             <?php
             $args = array(
-                    'walker'            => new Thesportsanctum_Walker_Comment(),
+                    'walker'            => new Itssportstime_Walker_Comment(),
                     'style'             => 'ol',
                     'avatar_size'       => 32,
                     'short_ping'        => false,   // @since 3.6
@@ -47,14 +47,14 @@ if ( post_password_required() )
             if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) :
         ?>
         <nav class="navigation comment-navigation" role="navigation">
-            <h1 class="screen-reader-text section-heading"><?php _e( 'Comment navigation', 'thesportsanctum' ); ?></h1>
-            <div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'thesportsanctum' ) ); ?></div>
-            <div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'thesportsanctum' ) ); ?></div>
+            <h1 class="screen-reader-text section-heading"><?php _e( 'Comment navigation', 'itssportstime' ); ?></h1>
+            <div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'itssportstime' ) ); ?></div>
+            <div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'itssportstime' ) ); ?></div>
         </nav><!-- .comment-navigation -->
         <?php endif; // Check for comment navigation ?>
 
         <?php if ( ! comments_open() && get_comments_number() ) : ?>
-        <p class="no-comments"><?php _e( 'Comments are closed.' , 'thesportsanctum' ); ?></p>
+        <p class="no-comments"><?php _e( 'Comments are closed.' , 'itssportstime' ); ?></p>
         <?php endif; ?>
 
     <?php endif; // have_comments() ?>

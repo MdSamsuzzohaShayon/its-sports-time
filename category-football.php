@@ -12,7 +12,7 @@
             </div>
         </div>
         <div class="row justify-content-center mt-3">
-            <?php thesportsanctum_customize_pagination('', ''); ?>
+            <?php itssportstime_customize_pagination('', ''); ?>
         </div>
     </div>
 

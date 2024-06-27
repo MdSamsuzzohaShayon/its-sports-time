@@ -1,5 +1,5 @@
 <?php
-class Thesportsanctum_Walker_Comment extends Walker {
+class Itssportstime_Walker_Comment extends Walker {
 
     /**
      * What the class handles.

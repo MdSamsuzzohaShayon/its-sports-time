@@ -1,5 +1,5 @@
 <?php
-class Thesportsanctum_Top_Menu_Walker extends Walker {
+class Itssportstime_Top_Menu_Walker extends Walker {
     /**
      * What the class handles.
      *
@@ -278,7 +278,7 @@ class Thesportsanctum_Top_Menu_Walker extends Walker {
 
 
 
-class Thesportsanctum_Social_Menu_Walker extends Walker {
+class Itssportstime_Social_Menu_Walker extends Walker {
 
     public $tree_type = array( 'post_type', 'taxonomy', 'custom' );
 
@@ -411,7 +411,7 @@ class Thesportsanctum_Social_Menu_Walker extends Walker {
  * Feature menu walker class
  */
 
-class Thesportsanctum_Feature_Menu_Walker extends Walker {
+class Itssportstime_Feature_Menu_Walker extends Walker {
     /**
      * What the class handles.
      *
