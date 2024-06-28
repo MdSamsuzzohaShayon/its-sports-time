@@ -6,6 +6,13 @@
  - should have a bot for messaging
  - Pursue forum to get post idea __https://blog.feedspot.com/sports_betting_forums/__ __https://www.indiancricketfans.com/forum/6-cricket-talk/__
 
+### Design References
+ - Blog Style - https://ithemeslab.com/sitetemplate/sportzen/demo/sports2.html
+ - Header style - https://kodeforest.net/wp-demo/sports-club/
+ - Main website - http://preview.themeforest.net/item/gameplay-sports-club-blog-and-magazine-html-template/full_screen_preview/18711744?_ga=2.194321710.2056672389.1719495027-1871772981.1710479217&_gac=1.117115252.1719495027.CjwKCAjwm_SzBhAsEiwAXE2Cv2C7CkDyUV-xCnPqJo7s2jqzDisdVRfR2hn7uubbCcVWMKvjTA44MhoCcNIQAvD_BwE
+ - Card Design - https://preview.themeforest.net/item/adrive-a-running-club-and-sports-website-theme-sports-blog/full_screen_preview/26726314?_ga=2.194321710.2056672389.1719495027-1871772981.1710479217&_gac=1.117115252.1719495027.CjwKCAjwm_SzBhAsEiwAXE2Cv2C7CkDyUV-xCnPqJo7s2jqzDisdVRfR2hn7uubbCcVWMKvjTA44MhoCcNIQAvD_BwE
+ - 
+
 ### Theme development reference
  - [WordPress Nav Menu](https://www.youtube.com/watch?v=TmmLRv9yY0M)
  - [Custom walker class](https://developer.wordpress.org/reference/classes/walker_nav_menu/) ([tutorial](https://www.youtube.com/watch?v=tsB6frHTUhs))
