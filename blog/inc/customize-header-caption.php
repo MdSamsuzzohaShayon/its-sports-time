@@ -1,7 +1,7 @@
 <?php
 function itssportstime_customize_register($wp_customize){
 
-    $wp_customize->add_section('thosportsanctum_caption_section', array(
+    $wp_customize->add_section('itssportstime_caption_section', array(
         'title'    => __('Caption homepage', 'itssportstime'),
         'description' => '',
         'priority' => 120,

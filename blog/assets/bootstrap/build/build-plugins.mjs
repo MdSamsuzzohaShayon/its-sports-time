@@ -16,7 +16,7 @@ import banner from './banner.mjs'
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
-const sourcePath = path.resolve(__dirname, '../js/src/').replace(/\\/g, '/')
+const sourcePath = path.resolve(__dirname, '../js/js/').replace(/\\/g, '/')
 const jsFiles = globby.sync(`${sourcePath}/**/*.js`)
 
 // Array which holds the resolved plugins

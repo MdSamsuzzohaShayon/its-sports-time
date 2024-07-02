@@ -69,7 +69,7 @@ function itssportstime_enqueue_script(){
 //    wp_enqueue_script( 'bootstrap-js', get_theme_file_uri("/assets/js/bootstrap.bundle.min.js"), array(), '5.0.0' );
     wp_enqueue_script( 'axios-js', 'https://unpkg.com/axios/dist/axios.min.js', array(), '5.0.0' );
     wp_enqueue_script( 'bootstrap-js', get_theme_file_uri('/assets/js/bootstrap.min.js'), array(), '5.0.0' );
-    wp_enqueue_script( 'main-js', get_theme_file_uri("/assets/js/main.js"), array(), '1.0.0' );
+    wp_enqueue_script( 'main-js', get_theme_file_uri("/assets/js/dist/main.min.js"), array(), '1.0.0' );
 }
 add_action("wp_enqueue_scripts", "itssportstime_enqueue_script");
 

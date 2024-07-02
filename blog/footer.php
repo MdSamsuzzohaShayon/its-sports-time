@@ -31,7 +31,7 @@
                           $logo = wp_get_attachment_image_src($custom_logo_id, 'full');
 
                           if (has_custom_logo()) {
-                              echo '<img src="' . esc_url($logo[0]) . '" class="main-menu-logo" alt="' . get_bloginfo('name') . '">';
+                              echo '<img js="' . esc_url($logo[0]) . '" class="main-menu-logo" alt="' . get_bloginfo('name') . '">';
                           } else {
                               echo '<h1>' . get_bloginfo('name') . '</h1>';
                           }

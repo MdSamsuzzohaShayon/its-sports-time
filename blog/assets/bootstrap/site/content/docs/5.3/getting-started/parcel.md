@@ -43,8 +43,8 @@ Now that we have all the necessary dependencies installed, we can get to work cr
 We've already created the `my-project` folder and initialized npm. Now we'll also create our `src` folder, stylesheet, and JavaScript file to round out the project structure. Run the following from `my-project`, or manually create the folder and file structure shown below.
 
 ```sh
-mkdir {src,src/js,src/scss}
-touch src/index.html src/js/main.js src/scss/styles.scss
+mkdir {js,js/js,js/scss}
+touch js/index.html js/js/main.js js/scss/styles.scss
 ```
 
 When you're done, your complete project should look like this:
@@ -98,7 +98,7 @@ With dependencies installed and our project folder ready for us to start coding,
    {
       // ...
       "scripts": {
-        "start": "parcel serve src/index.html --public-url / --dist-dir dist",
+        "start": "parcel serve js/index.html --public-url / --dist-dir dist",
         "test": "echo \"Error: no test specified\" && exit 1"
       },
       // ...

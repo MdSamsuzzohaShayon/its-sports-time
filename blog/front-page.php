@@ -1,5 +1,6 @@
 <?php get_header('home'); ?>
-<!-- <div class="main-header-body-wrapper" style="background-image: url(<?php //echo get_theme_mod("Itssportstime_banner"); ?>);"> -->
+
+
 <!-- MAIN SECTION START  -->
 <div class="main-body background-transparent">
 
@@ -7,6 +8,9 @@
 
 </div>
 <!-- MAIN SECTION ENDS  -->
+
+
+
 </div>
 <!--    End landing-->
 
@@ -26,16 +30,16 @@
 
 
 <!--        latest and popular start -->
-<div class="container latest-popular" id="latest-popular">
-    <div class="row align-items-md-start">
-        <div class="col-md-8 latest-post">
-            <?php get_template_part('template-parts/segment', 'latest'); ?>
-        </div>
-        <div class="col-md-4 popular-post sticky-md-top">
-            <?php dynamic_sidebar('sidebar-popular'); ?>
-        </div>
-    </div>
-</div>
+<!--<div class="container latest-popular" id="latest-popular">-->
+<!--    <div class="row align-items-md-start">-->
+<!--        <div class="col-md-8 latest-post">-->
+<!--            --><?php //get_template_part('template-parts/segment', 'latest'); ?>
+<!--        </div>-->
+<!--        <div class="col-md-4 popular-post sticky-md-top">-->
+<!--            --><?php //dynamic_sidebar('sidebar-popular'); ?>
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
 <!--        latest and popular end -->
 
 

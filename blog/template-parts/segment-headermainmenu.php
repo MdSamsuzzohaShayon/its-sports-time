@@ -21,8 +21,20 @@
           </div>
           <!-- Logo menu ends  -->
 
+            <!-- Open/close toggle Start -->
+            <div class="open-close-toggle d-block d-md-none">
+                <div class="open-menu d-block" id="menu-open-btn">
+                    <i class="bi bi-list"></i>
+                </div>
+
+                <div class="close-menu d-none" id="menu-close-btn">
+                    <i class="bi bi-x" ></i>
+                </div>
+            </div>
+            <!-- Open/close toggle End -->
+
           <!-- menu list start  -->
-          <div class="main-menu-item main-menu-2">
+          <div class="main-menu-item main-menu-2 d-none d-md-block" id="main-menu-header">
             <?php
             if(has_nav_menu('main_menu')){
               wp_nav_menu(array(
@@ -36,8 +48,10 @@
             ?>
           </div>
           <!-- menu list ends  -->
+
+
           <!-- search menu start  -->
-            <div class="main-menu-item main-menu-3">
+            <div class="main-menu-item main-menu-3 d-none d-md-block">
 <!--                handled by searchform.php-->
                 <?php get_search_form(); ?>
             </div>

@@ -49,8 +49,8 @@ Now that we have all the necessary dependencies installed and set up, we can get
 We've already created the `my-project` folder and initialized npm. Now we'll also create our `src` folder, stylesheet, and JavaScript file to round out the project structure. Run the following from `my-project`, or manually create the folder and file structure shown below.
 
 ```sh
-mkdir {src,src/js,src/scss}
-touch src/index.html src/js/main.js src/scss/styles.scss vite.config.js
+mkdir {js,js/js,js/scss}
+touch js/index.html js/js/main.js js/scss/styles.scss vite.config.js
 ```
 
 When you're done, your complete project should look like this:

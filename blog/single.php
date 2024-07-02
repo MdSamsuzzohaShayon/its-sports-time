@@ -95,7 +95,7 @@
               $card_output .= '<div class="single-related-post-item bg-secondary mb-3">';
               $card_output .= '<a href="' . get_permalink() . '" class="text-decoration-none text-white">';
                // . get_the_title() .
-              $card_output .= '<img class="img-fluid" src="' . get_the_post_thumbnail_url() . '" />';
+              $card_output .= '<img class="img-fluid" js="' . get_the_post_thumbnail_url() . '" />';
               $card_output .= '<h3 class="mx-1 my-3">' . get_the_title() . '</h3>';
               $card_output .=  '</a>';
               $card_output .= '</div>';

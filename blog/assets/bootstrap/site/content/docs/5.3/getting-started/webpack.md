@@ -49,8 +49,8 @@ Now that we have all the necessary dependencies installed, we can get to work cr
 We've already created the `my-project` folder and initialized npm. Now we'll also create our `src` and `dist` folders to round out the project structure. Run the following from `my-project`, or manually create the folder and file structure shown below.
 
 ```sh
-mkdir {src,src/js,src/scss}
-touch src/index.html src/js/main.js src/scss/styles.scss webpack.config.js
+mkdir {js,js/js,js/scss}
+touch js/index.html js/js/main.js js/scss/styles.scss webpack.config.js
 ```
 
 When you're done, your complete project should look like this:
@@ -84,7 +84,7 @@ With dependencies installed and our project folder ready for us to start coding,
 
    module.exports = {
      mode: 'development',
-     entry: './src/js/main.js',
+     entry: './js/js/main.js',
      output: {
        filename: 'main.js',
        path: path.resolve(__dirname, 'dist')
@@ -95,7 +95,7 @@ With dependencies installed and our project folder ready for us to start coding,
        hot: true
      },
      plugins: [
-       new HtmlWebpackPlugin({ template: './src/index.html' })
+       new HtmlWebpackPlugin({ template: './js/index.html' })
      ]
    }
    ```
@@ -160,7 +160,7 @@ Importing Bootstrap into Webpack requires the loaders we installed in the first 
 
    module.exports = {
      mode: 'development',
-     entry: './src/js/main.js',
+     entry: './js/js/main.js',
      output: {
        filename: 'main.js',
        path: path.resolve(__dirname, 'dist')
@@ -171,7 +171,7 @@ Importing Bootstrap into Webpack requires the loaders we installed in the first 
        hot: true
      },
      plugins: [
-       new HtmlWebpackPlugin({ template: './src/index.html' })
+       new HtmlWebpackPlugin({ template: './js/index.html' })
      ],
      module: {
        rules: [

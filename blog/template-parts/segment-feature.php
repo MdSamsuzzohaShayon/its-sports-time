@@ -38,7 +38,7 @@
                     <div class="col-sm-12">
                         <a class="stretched-link row mb-3 f-item" href="' . get_permalink() . '">
                             <div class="col-md-4 m-0 txt-img p-0">
-                                <img src="' . $img_url . '"     alt="...">
+                                <img js="' . $img_url . '"     alt="...">
                             </div>
                             <div class="col-md-8 p-0 txt-img d-flex justify-content-between flex-column">
                                 <h3 class="mx-2 text-white feature-item-heading" >' . get_the_title() . '</h3>

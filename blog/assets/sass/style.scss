@@ -15,7 +15,6 @@ $input-border-width: 0;
 $h5-font-size:                $font-size-base * 1.0;
 $h3-font-size:                $font-size-base * 0.9;
 
-// font-family: 'ZCOOL XiaoWei', serif;
 
 
 
@@ -28,527 +27,55 @@ $border-color: rgba(114, 114, 128, 0.3);
 
 
 
-
-
 @import "../bootstrap/scss/bootstrap.scss";
 
 
 $utilities: map-merge(
-                $utilities,
-                (
-                        "text-shadow": (
-                                property: box-shadow,
-                                class: shadow,
-                                values: (
-                                        text: "2px 2px #ff0000"
-                                )
-                        ),
-                )
+    $utilities,
+    (
+            "text-shadow": (
+                    property: box-shadow,
+                    class: shadow,
+                    values: (
+                            text: "2px 2px #ff0000"
+                    )
+            ),
+    )
 );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 
 // Then add additional custom code here
 
-body{
-  background-color: $secondary-color-3;
-}
 
-.site-wrapper{
-  p{
-    font-size: 0.86rem;
-    font-family: $text-font-family;
-    // color: #C4C9F8 ;
-  }
-  h1{
-    @include heading-design;
-  }
-  h2{
-    @include heading-design;
-    font-size: 1rem;
-  }
-  h3{
-    font-family: $heading-3-font-family;
-    text-transform: capitalize;
-  }
-  @media(max-width: $br-md){
-    h2{
-      font-size: 0.9rem;
-    }
-    h3{
-      // font-size:
-    }
-  }
-  @media(max-width: $br-lg){
-    p{
-      font-size: 0.7rem;
-    }
-  }
-  // font-family: $text-font-family;
-  .text-justify{
-    text-align: justify;
-  }
-  .img-fluid{
-    width: 100%;
-  }
-}
+//============== Global ==============
+@import "global.scss";
 
+//============== Menu ==============
+@import "header.scss";
 
-.top-menu, .top-navbar{
-  height: 35px;
-  color: $error-color-2 !important;
-  .menu-1, .menu-3{
-    width: 42%;
-  }
-  .menu-2{
-    width: 15%;
-  }
-  .menu-item{
-    height: 100%;
-  }
-  .text-danger{
-    color: $error-color-2 !important;
-  }
-}
 
-.main-menu-logo{
-  height: 50px;
+//============== Landing ==============
+//__________________________________
 
-  @media (max-width: $br-md){
-    height: 30px;
-  }
-}
 
+//============== Main Menu ==============
+//__________________________________
 
-.outline-none{
-  outline: none;
-  &:focus{
-    box-shadow: none;
-  }
-}
 
+//============== Sidebar ==============
+//__________________________________
 
 
+//============== Sidebar ==============
+//__________________________________
 
 
+//============== Single Post ==============
+//__________________________________
 
 
+//============== Footer ==============
+//__________________________________
 
-
-
-
-
-
-
-.landing-main-menu{
-  @include bg_image_style(100%, 100vh);
-  }
-  //@media(max-width: $br-md){height: 100vh; background-size: cover;}
-
-
-  .caption-main{
-    height: 590px;
-    // font-family: $text-font-family;
-    h1{
-      font-size: 4rem;
-      text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
-    }
-    p{
-      font-size: 1rem;
-     text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
-    }
-    @media(max-width: $br-md){
-      height: 400px;
-      h2{font-size: 2rem;}
-    }
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media(max-width: $br-md){
-  .sec-heading{
-    border-bottom: 1px solid $error-color-2;
-    text-align: left !important;
-  }
-}
-
-
-
-
-.main-menu{
-  background-color: $secondary-color-2;
-  a{
-    font-family: $heading-1-font-family ;
-    font-weight: bold;
-    font-size: 1rem;
-  }
-
-  .main-menu-1, .main-menu-3{
-    width: 15%;
-  }
-  .main-menu-2{
-    width: 69%;
-  }
-
-  .logo-holder{
-    width: fit-content;
-  }
-  @media (max-width: $br-md){
-    a{
-      font-size: 0.8rem;
-    }
-    .main-menu-item{
-      width: 100%;
-    }
-    .logo-holder{
-      width: 100%;
-    }
-  }
-}
-
-
-
-
-.feature-post-segment{
-  height: $f-post-h;
-  // overflow-y: auto;
-  //padding-bottom: 2%;
-  // font-family: $text-font-family;
-  //transform: translateY(-$translate-top);
-  h2{color: $error-color-2 !important;}
-  .text-danger{
-    color: $error-color-2;
-  }
-  .rotate-cat{
-    transform: skewY($feature-skew);
-  }
-  .feature-post-shape{
-    height: $f-post-h;
-    background-image: linear-gradient( $secondary-color-1, $secondary-color-3);
-    //background-color: blue;
-    transform: skewY(-$feature-skew);
-
-    .feature-lg-img{
-      height: 620px;
-      .row{
-        padding: 0;
-        margin: 0;
-      }
-      img{
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        object-position: center;
-      }
-      h3{
-        margin-top: 10px;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-      }
-    }
-
-
-
-    .smColumn1,{
-      @include sm-two-columns;
-    }
-    .smColumn2{
-      @include sm-two-columns;
-    }
-
-    .cat-features{
-      padding-top: 8%;
-      transform: skewY($feature-skew);
-      .nav{
-        width: 100%;
-      }
-      .nav-link{
-        width: fit-content;
-        img{
-          width: 60px;
-        }
-      }
-      h3{
-        color: $error-color-2;
-      }
-    }
-
-
-    .features{
-      transform: skewY($feature-skew);
-
-      .large-card-image{
-        height: 450px;
-        object-fit: cover;
-        object-position: center;
-      }
-      .stretched-link{
-        width: 100%;
-        margin: 0;
-        text-decoration: none;
-        &:after{
-          position: static;
-        }
-      }
-      .txt-img{
-        img{
-          width: 100%;
-        }
-      }
-    }
-
-
-    @media(max-width: $br-sm){
-      .cat-features{
-        padding-top: 8%;
-        .nav-link{
-          img{
-            width: 30px;
-          }
-        }
-        h3{
-          color: $error-color-2;
-        }
-      }
-    }
-
-  }
-  .post-link{
-    width: 100%;
-  }
-  @media(max-width: $br-md){
-    // margin-top: -300px;
-    padding-top: 7%;
-    height: fit-content;
-    transform: translateY(0px);
-    padding-top: 0;
-    .rotate-cat{
-      transform: skewY(0deg);
-    }
-    .feature-post-shape{
-      height: fit-content;
-      transform: translateY(0px);
-      .cat-features{
-        transform: translateY(0px);
-        padding-top: 0;
-        .nav-link{
-          img{
-            width: 200px;
-          }
-        }
-      }
-      .features{
-        transform: translateY(0px);
-      }
-    }
-  }
-
-@media(max-width: $br-lg){
-
-}
-}
-
-
-
-.latest-popular{
-  margin-top: 80px !important;
-  z-index: 1;
-  h2{
-    color: $error-color-2 !important;
-  }
-  h5{
-    //color: $error-color-2 !important;
-  }
-  //transform: translateY(-$translate-top);
-  .latest-post{
-    // font-family: $text-font-family;
-    img{
-      @include fit-post-image();
-    }
-    .card{
-      background: transparent;
-      .card-title{
-        color: $error-color-2 !important;
-      }
-    }
-  }
-
-
-}
-
-
-
-.popular-post{
-  .list-heading{
-    color: $error-color-2;
-  }
-  ol {
-    counter-reset: items;
-  }
-  li {
-    display: block;
-    counter-increment: items;
-    &:before {
-      content: "0" counter(items)" ";
-      color: #6c757d !important;
-      font-size: 2rem;
-    }
-    &:nth-child(n+8):before {
-      content: "0" counter(items)" ";
-    }
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.cricket-post{
-  .post{
-    height: fit-content;
-  }
-  img{
-    @include fit-post-image();
-  }
-  .text-error{
-    color: $error-color-2 !important;
-  }
-}
-
-.pagination{
-  .page-item{
-    a{
-      text-decoration: none;
-      color: $light;
-    }
-  }
-  .active{
-    a{
-      background-color: $light-color-1 !important;
-    }
-  }
-  .disabled{
-    a{
-      background-color: $secondary-color-2 !important;
-    }
-  }
-}
-
-
-.single-page-container{
-  .single-post-img{
-    object-fit: cover;
-    object-position: top;
-    max-height: 550px;
-  }
-}
-
-.single-related-post-item{
-  flex-basis: 23%;
-  height: 260px;
-  img{
-    height: 150px;
-    object-fit: cover;
-    object-position: top;
-  }
-}
-
-
-.comments-area{
-  .comment-body{
-    // color: white;
-    // border: none;
-    outline: none;
-    &::placeholder{
-      color: $secondary-color-4;
-    }
-  }
-  @media (max-width: $br-md){
-    // .comment-body{
-    //   width: 25% !important;
-    // }
-  }
-}
-
-
-
-
-
-.blog-footer{
-  width: 100%;
-  //background-color: #202234;
-  background-color: $secondary-color-2;
-  // font-family: $bellefair;
-  .footer-social-menu{
-    width: fit-content;
-  }
-  @media(max-width: $br-md){
-    .footer-social-menu{
-      width: auto;
-    }
-  }
-  .nav-item{
-    a{
-      font-family: $heading-1-font-family ;
-      font-weight: bold;
-    }
-  }
-
-  .newsletter-input{
-    background-color: #33364D !important;
-  }
-}
