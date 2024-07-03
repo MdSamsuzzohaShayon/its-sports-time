@@ -1,0 +1,70 @@
+.top-menu, .top-navbar{
+  height: 35px;
+  color: $error-color-2 !important;
+  .menu-1, .menu-3{
+    width: 42%;
+  }
+  .menu-2{
+    width: 15%;
+  }
+  .menu-item{
+    height: 100%;
+  }
+  .text-danger{
+    color: $error-color-2 !important;
+  }
+}
+
+.main-menu-logo{
+  height: 50px;
+
+  @media (max-width: $br-md){
+    height: 30px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main-menu{
+  background-color: $secondary-color-2;
+  a{
+    font-family: $heading-1-font-family ;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  .main-menu-1, .main-menu-3{
+    width: 15%;
+  }
+  .main-menu-2{
+    width: 69%;
+  }
+
+  .logo-holder{
+    width: fit-content;
+  }
+  @media (max-width: $br-md){
+    a{
+      font-size: 0.8rem;
+    }
+    .main-menu-item{
+      width: 100%;
+    }
+  }
+}

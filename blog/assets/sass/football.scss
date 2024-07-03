@@ -1,0 +1,3 @@
+.football-card-img{
+  @include fit-post-image(100%, $max-thumb-height, top);
+}

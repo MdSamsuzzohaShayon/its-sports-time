@@ -1,0 +1,58 @@
+body{
+  background-color: $secondary-color-3;
+}
+
+.site-wrapper{
+  p{
+    font-size: 0.86rem;
+    font-family: $text-font-family;
+    // color: #C4C9F8 ;
+  }
+  h1{
+    @include heading-design;
+  }
+  h2{
+    @include heading-design;
+    font-size: 1rem;
+  }
+  h3{
+    font-family: $heading-3-font-family;
+    text-transform: capitalize;
+  }
+  @media(max-width: $br-md){
+    h2{
+      font-size: 0.9rem;
+    }
+    h3{
+      // font-size:
+    }
+  }
+  @media(max-width: $br-lg){
+    p{
+      font-size: 0.7rem;
+    }
+  }
+  // font-family: $text-font-family;
+  .text-justify{
+    text-align: justify;
+  }
+  .img-fluid{
+    width: 100%;
+  }
+}
+
+
+.outline-none{
+  outline: none;
+  &:focus{
+    box-shadow: none;
+  }
+}
+
+
+@media(max-width: $br-md){
+  .sec-heading{
+    border-bottom: 1px solid $error-color-2;
+    text-align: left !important;
+  }
+}
