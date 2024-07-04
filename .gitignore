@@ -1,4 +1,5 @@
 blog/assets/bootstrap
 blog/assets/js/node_modules
 forum/node_modules
+forum/.next
 
