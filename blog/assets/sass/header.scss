@@ -29,18 +29,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 .main-menu{
   background-color: $secondary-color-2;
   a{
@@ -67,4 +55,29 @@
       width: 100%;
     }
   }
+}
+
+
+
+
+
+
+
+
+// Categories
+.cat-features{
+  .feature-menu-nav{
+    @media (max-width: $br-md){
+      column-gap: 1rem;
+      .list-group-item{
+        img{
+          width: 2rem;
+        }
+        h2{
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+
 }

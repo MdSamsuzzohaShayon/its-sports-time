@@ -56,9 +56,8 @@
                 </div>
                 <div class="col-md-3 col-sm-12 text-center text-md-start">
                     <?php
-
                     wp_nav_menu(array(
-                        'theme_location' => 'main_menu',
+                        'theme_location' => 'footer_menu',
                         'container' => 'ul',
                         'menu_class' => 'nav flex-column',
                         'add_li_class' => 'nav-item mb-2',
@@ -82,10 +81,16 @@
                     ?>
                 </div>
                 <div class="col-md-3 col-sm-12 text-center text-md-start">
-                    <h5>Newsletter</h5>
-                    <div class="input-group px-3 under-development">
-                        <input type="text" aria-label="First name" class="form-control newsletter-input">
-                        <span class="input-group-text bg-dark text-light px-3"><i class="bi bi-send"></i>Send</span>
+                    <h2 class="text-light">Newsletter</h2>
+                    <div class="input-group">
+                        <form id="newsletter-form" method="POST" action="<?php echo esc_url(admin_url('admin-post.php')); ?>">
+                            <?php wp_nonce_field('newsletter_subscribe'); ?>
+                            <input type="hidden" name="action" value="newsletter_subscribe">
+                            <input type="email" name="newsletter_email" aria-label="Email" class="form-control newsletter-input text-light outline-none" required>
+                            <button type="submit" class="input-group-text bg-dark text-light px-3">
+                                <i class="bi bi-send"></i>Send
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>

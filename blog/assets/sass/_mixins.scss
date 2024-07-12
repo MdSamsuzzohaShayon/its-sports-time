@@ -21,7 +21,8 @@
 }
 
 
-@mixin fit-post-image($w: 100%, $h: 250px, $op: top){
+@mixin fit-post-image($w: 100%, $h: $card-img-h, $op: top){
+   //$card-img-h = 16rem;
   width: $w;
   height: $h;
   object-fit: cover;

@@ -1,14 +1,21 @@
-$text-font-family: 'Playfair Display', serif;
+$text-font-family: "Roboto", sans-serif;
+//$text-font-family: 'Playfair Display', serif;
 
 // $heading-3-font-family: 'Oleo Script Swash Caps', cursive;
-$heading-3-font-family: 'Timmana', sans-serif;
-$bellefair: 'Bellefair', serif;
-$heading-1-font-family: 'El Messiri', sans-serif;
-$heading-2-font-family: 'El Messiri', sans-serif;
+//$heading-3-font-family: 'Timmana', sans-serif;
+//$bellefair: 'Bellefair', serif;
+//$heading-1-font-family: 'El Messiri', sans-serif;
+//$heading-2-font-family: 'El Messiri', sans-serif;
+
+$heading-3-font-family: "Roboto", sans-serif;
+$bellefair: "Roboto", sans-serif;
+$heading-1-font-family: "Roboto", sans-serif;
+$heading-2-font-family: "Roboto", sans-serif;
 
 
 $error-color-1: #A64254;
-$error-color-2: #C56375;
+//$error-color-2: #C56375;
+$error-color-2: #A64254;
 
 $secondary-color-1: #232537;
 $secondary-color-2: rgba(45, 47, 65, 72%);
@@ -40,3 +47,9 @@ $sm-col-height: 100px;
 $f-post-h: 140%;
 $f-post-h-lg: 140%;
 $max-thumb-height: 16rem;
+
+//Card images height
+$feature-img-h: 24rem;
+$feature-card-img-h: 5rem;
+$min-screen-img-h: 14rem;
+$card-img-h: 16rem;

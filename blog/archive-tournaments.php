@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="container my-5">
-    <h1 class="mb-4"><?php echo single_cat_title(); ?></h1>
+    <h1 class="mb-4 text-center text-uppercase">Football Tournaments</h1>
 
     <?php
     // Custom query to fetch 'tournament' posts

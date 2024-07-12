@@ -5,7 +5,7 @@
       wp_nav_menu(array(
          'theme_location' => 'feature_menu',
          'container' => '',
-         'menu_class' => 'd-flex justify-content-around align-items-center flex-wrap flex-lg-nowrap',
+         'menu_class' => 'feature-menu-nav d-flex justify-content-around align-items-center flex-wrap flex-lg-nowrap',
          'walker' => new Itssportstime_Feature_Menu_Walker()
      ));
     }
