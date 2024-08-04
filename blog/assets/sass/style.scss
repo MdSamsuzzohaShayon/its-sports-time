@@ -60,8 +60,9 @@ $utilities: map-merge(
 @import "landing.scss";
 
 
-//============== Main Menu ==============
+//============== Latest / Popular ==============
 //__________________________________
+@import "latest.scss";
 
 
 //============== Sidebar ==============

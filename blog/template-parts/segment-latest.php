@@ -1,5 +1,5 @@
 <div class="row">
-    <h2 class="text-danger mb-5 sec-heading">Latest posts</h2>
+    <h2 class="text-danger mb-5 sec-heading text-uppercase">Latest posts</h2>
     <?php
     // Arguments
     $args = array('post_type' => 'post', 'posts_per_page' => 12);
@@ -16,12 +16,12 @@
             }
             ?>
             <div class="col-md-6 mb-3">
-                <a class="text-decoration-none text-white" href="<?php echo the_permalink(); ?>">
-                    <img src="<?php echo $img_url ; ?>" class="card-img-top" alt="...">
+                <a class="card text-decoration-none text-white" href="<?php echo the_permalink(); ?>">
+                    <img src="<?php echo $img_url ; ?>" class="card-img-top card-img-l" alt="post-thumbnail">
                     <div class="card-body px-0">
-                        <h3 class="card-title"><?php the_title(); ?></h3>
+                        <h3 class="card-title text-white"><?php the_title(); ?></h3>
                         <p class="card-text text-white latest-desc"><?php the_excerpt(); ?></p>
-                        <small class="text-muted">Posted: <?php echo get_the_date('F j, Y') ; ?>  at <?php the_time('g:i a'); ?></small>
+                        <p class="text-white">Posted: <?php echo get_the_date('F j, Y') ; ?>  at <?php the_time('g:i a'); ?></p>
                     </div>
                 </a>
             </div>

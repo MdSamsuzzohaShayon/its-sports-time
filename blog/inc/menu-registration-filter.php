@@ -8,7 +8,7 @@ function itssportstime_register_menus(){
         'main_menu'  => __( 'Main Menu', 'itssportstime' ),
         'feature_menu'  => __( 'Feature Menu', 'itssportstime' ),
         'social_menu'  => __( 'Social Menu', 'itssportstime' ),
-        // 'footer_menu'  => __( 'Footer Menu', 'itssportstime' ),
+         'footer_menu'  => __( 'Footer Menu', 'itssportstime' ),
     ) );
 }
 add_action( 'after_setup_theme', 'itssportstime_register_menus', 0 );

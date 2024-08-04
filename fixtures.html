@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Its Sports Time | Fixtures!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .fixture-item {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Development Notice Start -->
+    <div class="development-notice bg-dark text-light text-center">
+        <div class="container">
+            <p>⚠️ Our site is currently under development. Some features may not be available or may contain placeholder
+                data.
+                Thank you for your understanding!</p>
+        </div>
+    </div>
+    <!-- Development Notice End -->
+
+    <!--Header start -->
+    <div class="container">
+        <header
+            class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+            <div class="col-md-3 mb-2 mb-md-0">
+                <a href="index.html" class="d-inline-flex link-body-emphasis text-decoration-none">
+                    <img height="32" src="/img/logo.png" alt="its-sports-time-logo">
+                </a>
+            </div>
+  
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="index.html" class="nav-link px-2 link-secondary">Home</a></li>
+                <li><a href="https://blog.itssportstime.org/tournament_type/copa-america-2024/"
+                        class="nav-link px-2">Copa
+                        24</a></li>
+                <li><a href="https://blog.itssportstime.org/tournament_type/euro-2024/" class="nav-link px-2">Euro
+                        24</a></li>
+                <li><a href="live-score.html" class="nav-link px-2">Live Score</a></li>
+                <li><a href="fixtures.html" class="nav-link px-2">Fixtures</a></li>
+                <li><a href="statistics.html" class="nav-link px-2">Stats</a></li>
+                <li><a href="https://forum.itssportstime.org" class="nav-link px-2">Forum</a></li>
+                <li><a href="https://blog.itssportstime.org" class="nav-link px-2">Blog</a></li>
+                <!-- <li><a href="contact.html" class="nav-link px-2">Contact</a></li> -->
+                <li><a href="about.html" class="nav-link px-2">About</a></li>
+            </ul>
+  
+            <div class="col-md-3 text-end">
+                <a type="button" role="presentation" href="login-signup.html" class="btn btn-outline-primary me-2">Login</a>
+                <a type="button" role="presentation" href="login-signup.html" class="btn btn-primary">Sign-up</a>
+            </div>
+        </header>
+      </div>
+    <!--Header end -->
+
+    <main>
+        <!--Section 1 start -->
+        <section class="container my-5">
+            <h1 class="text-center mb-4">Football Fixtures</h1>
+            
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <select id="tournament-filter" class="form-select mb-3">
+                        <option value="all">All Tournaments</option>
+                        <option value="premier-league">Premier League</option>
+                        <option value="la-liga">La Liga</option>
+                        <option value="serie-a">Serie A</option>
+                        <option value="bundesliga">Bundesliga</option>
+                        <option value="ligue-1">Ligue 1</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <input type="date" id="date-filter" class="form-control mb-3">
+                </div>
+            </div>
+            
+            <div id="fixtures">
+                <div class="card mb-3 fixture-item premier-league" data-date="2024-07-10">
+                    <div class="card-body">
+                        <h5 class="card-title">Premier League</h5>
+                        <p class="card-text">Team A vs Team B - Date: 2024-07-10</p>
+                    </div>
+                </div>
+                <div class="card mb-3 fixture-item la-liga" data-date="2024-07-12">
+                    <div class="card-body">
+                        <h5 class="card-title">La Liga</h5>
+                        <p class="card-text">Team C vs Team D - Date: 2024-07-12</p>
+                    </div>
+                </div>
+                <div class="card mb-3 fixture-item serie-a" data-date="2024-07-15">
+                    <div class="card-body">
+                        <h5 class="card-title">Serie A</h5>
+                        <p class="card-text">Team E vs Team F - Date: 2024-07-15</p>
+                    </div>
+                </div>
+                <div class="card mb-3 fixture-item bundesliga" data-date="2024-07-20">
+                    <div class="card-body">
+                        <h5 class="card-title">Bundesliga</h5>
+                        <p class="card-text">Team G vs Team H - Date: 2024-07-20</p>
+                    </div>
+                </div>
+                <div class="card mb-3 fixture-item ligue-1" data-date="2024-07-25">
+                    <div class="card-body">
+                        <h5 class="card-title">Ligue 1</h5>
+                        <p class="card-text">Team I vs Team J - Date: 2024-07-25</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Section 1 end -->
+    </main>
+
+
+
+    <!--Footer start -->
+    <footer class="bg-dark text-white mt-5">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>About Us</h5>
+                    <p>We provide comprehensive football statistics, live scores, and the latest news to keep you
+                        updated on all
+                        things football.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="http://blog.itssportstime.org/taurnaments" class="text-white">Tournaments</a></li>
+                        <li><a href="http://blog.itssportstime.org" class="text-white">Blog</a></li>
+                        <li><a href="http://forum.itssportstime.org" class="text-white">Community</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                        <li><a href="about.html" class="text-white">About</a></li>
+                        <li><a href="privacy-policy.html" class="text-white">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt"></i> 58-gha, 4, West Raja Bazaar, Dhaka</li>
+                        <li><i class="fas fa-phone"></i> +880 1785 208 590</li>
+                        <li><i class="fas fa-envelope"></i> admin@itssportstime.org</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center py-3">
+                <small>&copy; 2024 Its Sports Time. All Rights Reserved.</small>
+            </div>
+        </div>
+    </footer>
+    <!--Footer end -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tournamentFilter = document.getElementById('tournament-filter');
+            const dateFilter = document.getElementById('date-filter');
+            const fixtureItems = document.querySelectorAll('.fixture-item');
+
+            tournamentFilter.addEventListener('change', filterFixtures);
+            dateFilter.addEventListener('change', filterFixtures);
+
+            function filterFixtures() {
+                const selectedTournament = tournamentFilter.value;
+                const selectedDate = dateFilter.value;
+
+                fixtureItems.forEach(function(item) {
+                    const itemTournament = item.classList.contains(selectedTournament) || selectedTournament === 'all';
+                    const itemDate = item.getAttribute('data-date') === selectedDate || selectedDate === '';
+
+                    if (itemTournament && itemDate) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            }
+
+            // Trigger change event to show all fixtures on load
+            filterFixtures();
+        });
+    </script>
+</body>
+
+</html>

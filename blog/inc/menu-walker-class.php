@@ -528,7 +528,7 @@ class Itssportstime_Feature_Menu_Walker extends Walker {
         $indent = ( $depth ) ? str_repeat( $t, $depth ) : '';
 
         $classes   = empty( $menu_item->classes ) ? array() : (array) $menu_item->classes;
-        $classes[] = 'menu-item-' . $menu_item->ID;
+        $classes[] = 'menu-item-' . $menu_item->ID ;
 
         /**
          * Filters the arguments for a single nav menu item.
@@ -557,7 +557,7 @@ class Itssportstime_Feature_Menu_Walker extends Walker {
         /**
          * Rest all <li> class from menu
          */
-        $class_names = "";
+        $class_names = "class=list-group-item";
 
         /**
          * Filters the ID applied to a menu item's list item element.
@@ -698,4 +698,7 @@ class Itssportstime_Feature_Menu_Walker extends Walker {
     }
 
 }
+
+
+
 ?>

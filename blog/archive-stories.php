@@ -1,34 +1,54 @@
 <?php get_header(); ?>
-<div class="container">
-    <h2>This is archive-stories.php</h2>
-    <h2><?php echo single_cat_title(); ?></h2>
-    <?php get_template_part("template-parts/content", 'archive'); ?>
+<div class="container my-5">
+    <h1 class="mb-4 text-center text-uppercase">Football Stories</h1>
 
-<!--    Pagination-->
-    <?php //previous_posts_link(); ?>
-    <?php //next_posts_link(); ?>
-    <br>
     <?php
-    global $wp_query;
-    $big = 999999999; // need an unlikely integer
+    // Custom query to fetch 'tournament' posts
+    $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+    $args = array(
+        'post_type' => 'Stories',
+        'posts_per_page' => 10,
+        'paged' => $paged
+    );
+    $tournament_query = new WP_Query($args);
 
-    echo paginate_links( array(
-        'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
-        'format' => '?paged=%#%',
-        'current' => max( 1, get_query_var('paged') ),
-        'total' => $wp_query->max_num_pages
-    ) );
+    if ($tournament_query->have_posts()) :
+        echo '<div class="row">';
+        while ($tournament_query->have_posts()) : $tournament_query->the_post();
+            get_template_part('template-parts/content-archive', get_post_format());
+        endwhile;
+        echo '</div>';
+        ?>
+
+        <!-- Bootstrap pagination -->
+        <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-center">
+                <?php
+                $total_pages = $tournament_query->max_num_pages;
+                $current_page = max(1, get_query_var('paged'));
+
+                if ($current_page > 1) {
+                    echo '<li class="page-item"><a class="page-link" href="' . get_pagenum_link($current_page - 1) . '">Previous</a></li>';
+                }
+
+                for ($i = 1; $i <= $total_pages; $i++) {
+                    $active_class = ($i == $current_page) ? ' active' : '';
+                    echo '<li class="page-item' . $active_class . '"><a class="page-link" href="' . get_pagenum_link($i) . '">' . $i . '</a></li>';
+                }
+
+                if ($current_page < $total_pages) {
+                    echo '<li class="page-item"><a class="page-link" href="' . get_pagenum_link($current_page + 1) . '">Next</a></li>';
+                }
+                ?>
+            </ul>
+        </nav>
+
+    <?php
+    else :
+        echo '<p class="text-center">No tournaments found.</p>';
+    endif;
+
+    wp_reset_postdata();
     ?>
-    <nav aria-label="Page navigation example">
-        <ul class="pagination">
-            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">Next</a></li>
-        </ul>
-    </nav>
-
 </div>
-
 <?php get_footer(); ?>

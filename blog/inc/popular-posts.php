@@ -69,16 +69,16 @@ class IST_Popular_Posts_Widgets extends WP_Widget
         $post_query = new WP_Query($post_args);
         echo $args['before_widget'];
         if (!empty($instance['title'])) {
-            echo "<h2 class='text-danger mb-5 sec-heading'>" . apply_filters('widget_title', $instance['title']) . "</h2>";
+            echo "<h2 class='text-danger mb-5 sec-heading text-uppercase'>" . apply_filters('widget_title', $instance['title']) . "</h2>";
         }
 
         if ($post_query->have_posts()) {
-            echo '<ol class="list-group">';
+            echo '<ol class="list-group ">';
             while ($post_query->have_posts()) : $post_query->the_post();
-                echo '<li class="list-group-item d-flex justify-content-start align-items-start bg-transparent">
+                echo '<li class="list-group-item d-flex justify-content-start align-items-start bg-transparent border-0 mb-3">
                         <a href="' . get_permalink() . '" class="text-decoration-none w-100 ms-2">
                             <div class="ms-2 me-auto">
-                                <h3 class="text-white">' . get_the_title() . '</h3>
+                                <h5 class="text-white">' . get_the_title() . '</h5>
                                 <small class="text-white">Posted: ' . get_the_modified_date('F j, Y') . ' at ' . get_the_modified_date('g:i a') . '</small>
                             </div>
                         </a>

@@ -2,36 +2,38 @@ body{
   background-color: $secondary-color-3;
 }
 
+*{
+  font-family: $text-font-family;
+}
 .site-wrapper{
-  p{
-    font-size: 0.86rem;
-    font-family: $text-font-family;
-    // color: #C4C9F8 ;
+  h1, h2, h3, h4, h5, h6{
+    font-weight: bold;
   }
-  h1{
-    @include heading-design;
+
+  // Typography
+  h1 {
+    font-size: 1.3rem;
   }
-  h2{
-    @include heading-design;
-    font-size: 1rem;
+  h2 {
+    font-size: 1.15rem;
   }
-  h3{
-    font-family: $heading-3-font-family;
-    text-transform: capitalize;
+  h3 {
+    font-size: 1.05rem;
   }
-  @media(max-width: $br-md){
-    h2{
-      font-size: 0.9rem;
-    }
-    h3{
-      // font-size:
-    }
+  h4 {
+    font-size: 0.93rem;
   }
-  @media(max-width: $br-lg){
-    p{
-      font-size: 0.7rem;
-    }
+
+
+  h5 {
+    font-size: 0.85rem;
   }
+  p, li {
+    font-size: 0.75rem;
+    font-weight: lighter;
+  }
+
+
   // font-family: $text-font-family;
   .text-justify{
     text-align: justify;
@@ -41,6 +43,11 @@ body{
   }
 }
 
+
+.card-img-l{
+  @include fit-post-image();
+  border: 3px solid white;
+}
 
 .outline-none{
   outline: none;
